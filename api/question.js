@@ -9,7 +9,12 @@ export async function POST(req) {
     message:
       'I am a bot! Posting a long message to test the word-by-word streaming. The time is now ' +
       new Date().toLocaleTimeString(),
-    tables: [],
-    charts: [],
+
+    table: {
+      page: ['homepage', 'contact', 'about'],
+      visits: [123, 200, 999],
+      direct_traffic: [45, 6, 21],
+      another_column: ['dog', 'cat', 'bird'],
+    },
   })
 }
