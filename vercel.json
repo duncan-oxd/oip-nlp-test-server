@@ -10,7 +10,7 @@
       ]
     },
     {
-      "source": "/message",
+      "source": "/question",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "*" },
@@ -21,6 +21,6 @@
   ],
 
   "rewrites": [
-    { "source": "/message", "destination": "/api/message" }
+    { "source": "/question", "destination": "/api/question" }
   ]
 }
