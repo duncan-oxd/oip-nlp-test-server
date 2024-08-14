@@ -18,3 +18,9 @@ export async function POST(req) {
     },
   })
 }
+
+export async function OPTIONS() {
+  return Response.json({
+    message: 'ok',
+  })
+}
